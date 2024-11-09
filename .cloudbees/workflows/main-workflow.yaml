@@ -29,7 +29,7 @@ jobs:
           test-result-location: junit.xml
       - uses: cloudbees-io/checkout@v1
         name: Get source code
-        continue-on-error: true
+        continue-on-error: false
       - name: Run unit tests
         id: RunUnitTest
         kind: test
